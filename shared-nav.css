@@ -1,0 +1,100 @@
+/* ============================================================
+   India History Hub - shared slim top bar
+   Used by all pages (Freedom Struggle, Reformers, Chronicles)
+   ============================================================ */
+
+.hubbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 44px;
+  z-index: 950;
+  background: #14162b;
+  color: #fff;
+  font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
+}
+
+.hubbar-inner {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.hubbar-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #e8b339;
+  font-size: 13.5px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.hubbar-brand:hover { color: #f4c95d; }
+
+.hub-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: conic-gradient(
+    from 0deg,
+    #ff9933 0 120deg,
+    #ffffff 120deg 240deg,
+    #138808 240deg 360deg
+  );
+}
+
+.hubbar-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+  min-width: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.hubbar-links::-webkit-scrollbar { display: none; }
+
+.hubbar-links a {
+  padding: 6px 12px;
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 12.5px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.hubbar-links a:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.09);
+}
+
+.hubbar-links a.active {
+  color: #2b1a05;
+  background: #e8b339;
+}
+
+/* Pages whose own nav sits in normal flow (Reformers, Chronicles):
+   push content below the fixed bar and keep their sticky navs below it. */
+
+body.hub-site { padding-top: 44px; }
+
+body.hub-site .navbar { top: 44px; }
+
+@media (max-width: 560px) {
+  .hubbar-brand { font-size: 12.5px; }
+  .hubbar-links a { font-size: 11.5px; padding: 6px 10px; }
+}

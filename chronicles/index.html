@@ -1,0 +1,136 @@
+ok
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Chronicles of the Raj: Governors-General & Viceroys of India (1773–1947)</title>
+  <meta name="description" content="Explore an interactive timeline of the Governors-General and Viceroys of British India. Discover their dates of tenure, historical significance, and major achievements from 1773 to Independence in 1947.">
+  <meta name="keywords" content="British India, Governors-General, Viceroys, India History, Timeline, Warren Hastings, Lord Dalhousie, Lord Mountbatten, British Raj reforms">
+  <meta name="author" content="Historical Chronicles Project">
+  
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:title" content="Chronicles of the Raj: Governors-General & Viceroys of India">
+  <meta property="og:description" content="An interactive, beautifully styled chronological journey through the administrators of British India (1773-1947) with their achievements and portraits.">
+  <meta property="og:type" content="website">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Custom CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../shared-nav.css">
+</head>
+<body class="hub-site">
+    <nav class="hubbar" aria-label="Site sections">
+    <div class="hubbar-inner">
+      <a class="hubbar-brand" href="../index.html"><span class="hub-dot" aria-hidden="true"></span>India History Hub</a>
+      <div class="hubbar-links">
+        <a href="../index.html">Freedom Struggle</a>
+        <a href="../reformers/index.html">Reformers</a>
+        <a href="index.html" class="active">Chronicles of the Raj</a>
+        <a href="../dynasties/index.html">Dynasties</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Premium Header Banner -->
+  <header>
+    <div class="header-content">
+      <span class="header-pre">Imperial Administration (1773–1947)</span>
+      <h1 id="main-heading">Chronicles of the Raj</h1>
+      <p>A chronological timeline mapping the terms, policies, reforms, and historical significance of the Governors-General and Viceroys who shaped British India.</p>
+    </div>
+  </header>
+
+  <!-- Interactive Control Panel (Search & Filters) -->
+  <section class="controls-container" id="timeline-controls" aria-label="Timeline Controls">
+    <!-- Search Bar -->
+    <div class="search-box">
+      <i class="fas fa-search" aria-hidden="true"></i>
+      <input type="text" id="search-input" placeholder="Search by name, year, or keywords (e.g. 'Sati', 'Railways', 'Partition')..." aria-label="Search Administrators">
+    </div>
+
+    <!-- Filters wrapper -->
+    <div class="filters-wrapper">
+      <!-- Administration Phase Tabs -->
+      <nav class="filter-group" id="filter-navigation" aria-label="Administration Phase Filters">
+        <button class="filter-btn active" data-filter="all" id="btn-filter-all">All Eras</button>
+        <button class="filter-btn" data-filter="bengal" id="btn-filter-bengal">Bengal (1773–1833)</button>
+        <button class="filter-btn" data-filter="india" id="btn-filter-india">India (1833–1858)</button>
+        <button class="filter-btn" data-filter="viceroy" id="btn-filter-viceroy">Viceroys (1858–1947)</button>
+      </nav>
+      <!-- Results counter -->
+      <span class="results-info" id="results-count">Loading administrators...</span>
+    </div>
+  </section>
+
+  <!-- Floating Timeline Scrubber Gauge (Scroll spy widget) -->
+  <aside class="scrubber-widget" id="scrubber-widget" aria-label="Scroll Progress indicator">
+    <div class="scrubber-axis" aria-hidden="true">
+      <div class="scrubber-progress" id="scrubber-progress"></div>
+      <div class="scrubber-pointer">
+        <span class="scrubber-year" id="scrubber-year">1773</span>
+      </div>
+    </div>
+    <span class="scrubber-label">Timeline Year</span>
+  </aside>
+
+  <!-- Main Scrollable Timeline Cards Container -->
+  <main class="timeline-section" id="timeline-section">
+    <div id="timeline-cards" class="timeline-cards" aria-live="polite">
+      <!-- Cards are rendered dynamically here by app.js -->
+    </div>
+  </main>
+
+  <!-- Detailed Achievement Modal Overlay -->
+  <dialog id="detail-modal" class="modal-overlay" aria-labelledby="modal-name">
+    <div class="modal-box">
+      <!-- Close Button -->
+      <button class="modal-close-btn" id="modal-close" aria-label="Close details dialog">
+        <i class="fas fa-times" aria-hidden="true"></i>
+      </button>
+      
+      <!-- Modal Header Cover -->
+      <div class="modal-header-bg" aria-hidden="true"></div>
+      
+      <!-- Modal Contents Container -->
+      <div class="modal-body">
+        <!-- Sidebar Portrait -->
+        <div class="modal-sidebar">
+          <div class="modal-portrait-frame">
+            <img id="modal-image" class="modal-portrait" src="" alt="Portrait">
+            <div id="modal-fallback" class="modal-portrait-fallback"></div>
+          </div>
+        </div>
+        
+        <!-- Main details -->
+        <div class="modal-main-content">
+          <span id="modal-badge" class="modal-badge">Era</span>
+          <h2 id="modal-name" class="modal-name">Administrator Name</h2>
+          <p id="modal-title" class="modal-title-text">Official Title</p>
+          <p id="modal-tenure" class="modal-tenure-text">Tenure: Year - Year</p>
+          
+          <h3 class="modal-achievements-title">Major Achievements & Landmarks</h3>
+          <ul id="modal-achievements-list" class="modal-achievements-list">
+            <!-- Achievements list items are populated dynamically by app.js -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Footnotes and Project Info -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2026 Chronicles of the Raj. Prepared for educational and study resource reference.</p>
+      <p>Data sourced from Wikipedia & historical academic literature. Portraits sourced from Public Domain via <a href="https://commons.wikimedia.org" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>.</p>
+    </div>
+  </footer>
+
+  <!-- App Script Logic -->
+  <script src="app.js"></script>
+</body>
+</html>

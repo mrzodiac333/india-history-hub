@@ -1,0 +1,391 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7;
+  color: #2d2d2d;
+  background: #f8f7f4;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navbar */
+.navbar {
+  background: #1a1a2e;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #e8b339;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #e8b339;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #b0c4de;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Sections */
+.intro {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  color: #1a1a2e;
+  margin-bottom: 16px;
+}
+
+.intro p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Reformer Grid */
+.reformer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 28px;
+  padding-bottom: 60px;
+}
+
+.reformer-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.reformer-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.15);
+}
+
+.card-image {
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.initials {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #e8b339;
+  opacity: 0.85;
+}
+
+.card-body {
+  padding: 20px;
+  flex: 1;
+}
+
+.card-body h3 {
+  font-size: 1.2rem;
+  color: #1a1a2e;
+  margin-bottom: 4px;
+}
+
+.card-body .era {
+  font-size: 0.85rem;
+  color: #0f3460;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.card-body p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* Reformer Detail Page */
+.reformer-detail {
+  padding: 60px 0;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 24px;
+  color: #0f3460;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.detail-header {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.detail-avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 4px solid #e8b339;
+}
+
+.detail-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detail-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.detail-info h1 {
+  font-size: 2.2rem;
+  color: #1a1a2e;
+  margin-bottom: 6px;
+}
+
+.detail-info .era {
+  font-size: 1rem;
+  color: #0f3460;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.detail-info .tagline {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.detail-info .known-for {
+  background: #eef2f7;
+  padding: 12px 18px;
+  border-radius: 8px;
+  display: inline-block;
+  font-size: 0.95rem;
+}
+
+.detail-info .known-for strong {
+  color: #1a1a2e;
+}
+
+.detail-body {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: #444;
+}
+
+.detail-body h2 {
+  font-size: 1.5rem;
+  color: #1a1a2e;
+  margin: 32px 0 12px;
+  padding-bottom: 6px;
+  border-bottom: 3px solid #e8b339;
+  display: inline-block;
+}
+
+.detail-body p {
+  margin-bottom: 16px;
+}
+
+.detail-body ul {
+  margin: 12px 0 20px 24px;
+}
+
+.detail-body li {
+  margin-bottom: 8px;
+}
+
+.legacy-box {
+  background: linear-gradient(135deg, #1a1a2e, #0f3460);
+  color: #fff;
+  padding: 28px;
+  border-radius: 12px;
+  margin-top: 32px;
+}
+
+.legacy-box h2 {
+  color: #e8b339;
+  border-bottom-color: #e8b339;
+}
+
+.legacy-box p {
+  color: #ddd;
+}
+
+/* Footer */
+footer {
+  background: #1a1a2e;
+  color: #888;
+  padding: 24px 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Timeline Page */
+.timeline-page {
+  padding: 60px 0;
+}
+
+.timeline-page h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #1a1a2e;
+  margin-bottom: 40px;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 40px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 16px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #0f3460;
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 32px;
+  padding: 20px 24px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -30px;
+  top: 24px;
+  width: 16px;
+  height: 16px;
+  background: #e8b339;
+  border: 3px solid #0f3460;
+  border-radius: 50%;
+}
+
+.timeline-item .year {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #0f3460;
+}
+
+.timeline-item .event {
+  margin-top: 6px;
+  color: #555;
+}
+
+/* About Page */
+.about-page {
+  padding: 60px 0;
+}
+
+.about-page h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #1a1a2e;
+  margin-bottom: 32px;
+}
+
+.about-page p {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  font-size: 1.1rem;
+  color: #555;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .hero h1 { font-size: 2rem; }
+  .hero p { font-size: 1rem; }
+  .detail-header { flex-direction: column; align-items: center; text-align: center; }
+  .detail-avatar { width: 130px; height: 130px; }
+  .detail-avatar .initials { font-size: 3rem; }
+  .timeline { padding-left: 30px; }
+  .timeline-item::before { left: -22px; width: 12px; height: 12px; }
+  .nav-links { gap: 16px; }
+  .nav-links a { font-size: 0.9rem; }
+}
