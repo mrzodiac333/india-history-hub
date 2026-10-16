@@ -16,8 +16,11 @@ shared slim top bar on every page:
 
 ## How to open
 
-Double-click `index.html`, or right-click it and choose "Open with" your
-browser. No server or installation is required.
+Live version: **https://india-history-hub.vercel.app** - auto-deploys from
+this repo's `main` branch on every push.
+
+Or run it locally: double-click `index.html`, or right-click it and choose
+"Open with" your browser. No server or installation is required.
 
 Note: the Freedom Struggle, Reformers and Dynasties sections work fully
 offline; the Chronicles section loads its fonts/icons from a CDN and its
