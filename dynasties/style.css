@@ -158,7 +158,7 @@ h1, h2, h3, h4, .mono, .tl-year, .glance-title {
 .glance-bar.b-jhansi { background: linear-gradient(90deg, #9f1239, #c22a55); }
 
 .glance-axis .axis-track {
-  height: auto;
+  height: 18px;
   border: none;
   background: none;
 }
@@ -169,6 +169,7 @@ h1, h2, h3, h4, .mono, .tl-year, .glance-title {
   transform: translateX(-50%);
   font-size: 11px;
   color: var(--muted);
+  white-space: nowrap;
 }
 
 .glance-axis .axis-track span:first-child { transform: none; }
@@ -446,7 +447,7 @@ h1, h2, h3, h4, .mono, .tl-year, .glance-title {
 .tl-item::before {
   content: "";
   position: absolute;
-  left: -34px;
+  left: -30px;
   top: 8px;
   width: 12px;
   height: 12px;
