@@ -1,6 +1,6 @@
 # India History Hub
 
-A merged site bringing together four projects on Indian history, joined by a
+A merged site bringing together five projects on Indian history, joined by a
 shared slim top bar on every page:
 
 - **Freedom Struggle** (site root) - single-page site covering India's freedom
@@ -13,6 +13,7 @@ shared slim top bar on every page:
 - **Dynasties & Rulers** (`dynasties/`) - the Mughals, Marathas, the Nawabs of
   Awadh and Bengal, and the Rani of Jhansi, with their rulers and the major
   events of their times
+- **India After 1857** (site root) - full arc from the 1857 revolt to modern India, across ten illustrated pages and a 101-event timeline.
 
 ## How to open
 
@@ -22,7 +23,7 @@ this repo's `main` branch on every push.
 Or run it locally: double-click `index.html`, or right-click it and choose
 "Open with" your browser. No server or installation is required.
 
-Note: the Freedom Struggle, Reformers and Dynasties sections work fully
+Note: the Freedom Struggle, Reformers and Dynasties sections work fully, and India After 1857 also works offline (static content; fonts from Google Fonts CDN).
 offline; the Chronicles section loads its fonts/icons from a CDN and its
 portraits from Wikimedia Commons, so it needs an internet connection.
 
@@ -88,15 +89,15 @@ material one click away.
 
 Every page carries the same fixed top bar:
 
-`India History Hub` | Freedom Struggle | Reformers | Chronicles of the Raj | Dynasties
+`India History Hub` | Freedom Struggle | Reformers | Chronicles of the Raj | Dynasties | After 1857
 
 The bar highlights the section you are currently in and links between the
 four projects with plain relative links - no server needed.
 
 ## Features
 
-- Freedom Struggle, Reformers and Dynasties work fully offline, no external libraries
-- Responsive: desktop, tablet and mobile layouts in all four sections
+- Freedom Struggle, Reformers, Dynasties and India After 1857 work fully offline, no external libraries
+- Responsive: desktop, tablet and mobile layouts in all five sections
 - Interactive timeline filtering with smooth reveal animations
 - Expandable "More details" panels on cards (native `<details>`, no scripts)
 - Reading progress bar and navigation scroll-spy

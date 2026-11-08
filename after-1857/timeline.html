@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en" class="has-hubbar">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Master Timeline 1857–2025 — India After 1857</title>
+  <meta name="description" content="A filterable timeline of modern Indian history, from the Revolt of 1857 and the British Raj through the freedom struggle, Partition, the Republic and modern India.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../shared-nav.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="hub-site">
+  <nav class="hubbar" aria-label="Site sections">
+    <div class="hubbar-inner">
+      <a class="hubbar-brand" href="../index.html"><span class="hub-dot" aria-hidden="true"></span>India History Hub</a>
+      <div class="hubbar-links">
+        <a href="../index.html">Freedom Struggle</a>
+        <a href="../reformers/index.html">Reformers</a>
+        <a href="../chronicles/index.html">Chronicles of the Raj</a>
+        <a href="../dynasties/index.html">Dynasties</a>
+        <a href="index.html" class="active">After 1857</a>
+      </div>
+    </div>
+  </nav>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="page-progress" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-stamp" aria-hidden="true">1857</span>
+      <span class="brand-text">India After 1857<small>Raj &middot; Freedom &middot; Republic</small></span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Toggle menu">&#9776;</button>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="revolt.html">1857</a>
+      <a href="raj.html">Raj</a>
+      <a href="freedom.html">Freedom</a>
+      <a href="gandhi.html">Gandhi</a>
+      <a href="partition.html">Partition</a>
+      <a href="republic.html">Republic</a>
+      <a href="people.html">People</a>
+      <a href="timeline.html">Timeline</a>
+      <a href="faq.html">FAQ</a>
+      <button class="theme-btn" type="button" title="Toggle theme">&#127769;</button>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero" data-year="1857–2025">
+    <div class="wrap">
+      <span class="kicker">Master timeline</span>
+      <h1>More than a century and a half, at a glance</h1>
+      <p class="lede">From the first shots at Barrackpore to the third Modi government — filter by era or search for a year, a person or an event.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="timeline-controls">
+        <div class="chips" role="group" aria-label="Filter timeline by era">
+          <button class="chip active" type="button" data-filter="all">All eras</button>
+          <button class="chip" type="button" data-filter="revolt">1857 Revolt</button>
+          <button class="chip" type="button" data-filter="raj">British Raj</button>
+          <button class="chip" type="button" data-filter="freedom">Freedom Struggle</button>
+          <button class="chip" type="button" data-filter="partition">Partition</button>
+          <button class="chip" type="button" data-filter="republic">Republic</button>
+          <button class="chip" type="button" data-filter="modern">Modern India</button>
+        </div>
+        <label class="tl-search">
+          <span class="sr-only">Search the timeline</span>
+          <input type="search" id="tl-search" placeholder="Search years, people, events&hellip;">
+        </label>
+      </div>
+
+      <p class="tl-count" id="tl-count" aria-live="polite"></p>
+
+      <div class="timeline" id="timeline"></div>
+      <p class="tl-empty" id="tl-empty" hidden>No events match your search.</p>
+
+      <div class="callout" style="margin-top:46px">
+        <h3>A note on the record</h3>
+        <p>This timeline runs to 2025 and is updated periodically. Dates for events before 1947 follow standard references; where historians differ on an exact day, the commonly cited date is used. See the <a href="faq.html">FAQ and sources page</a> for further reading.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <p class="foot-brand">India After 1857</p>
+        <p>From the embers of the 1857 revolt to the Republic of today — the Raj, the freedom struggle, Partition and after.</p>
+      </div>
+      <div>
+        <p class="foot-head">The Story</p>
+        <a href="revolt.html">The Revolt of 1857</a>
+        <a href="raj.html">The British Raj</a>
+        <a href="freedom.html">Freedom Struggle</a>
+        <a href="gandhi.html">Mahatma Gandhi</a>
+        <a href="partition.html">Partition &amp; Independence</a>
+        <a href="republic.html">The Republic</a>
+      </div>
+      <div>
+        <p class="foot-head">Reference</p>
+        <a href="timeline.html">Master Timeline</a>
+        <a href="people.html">Key Figures</a>
+        <a href="faq.html">FAQ &amp; Glossary</a>
+        <a href="index.html">Home</a>
+      </div>
+    </div>
+    <p class="foot-note">An educational project &middot; Compiled from standard historical references &middot; Dates follow the Gregorian calendar.</p>
+  </div>
+</footer>
+
+<button class="to-top" type="button" aria-label="Back to top">&#8593;</button>
+<script src="js/site.js"></script>
+<script src="js/timeline.js"></script>
+</body>
+</html>
