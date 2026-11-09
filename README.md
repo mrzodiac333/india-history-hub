@@ -95,6 +95,9 @@ material one click away.
 | `index.html` | Freedom Struggle home page (site root) |
 | `style.css` | Freedom Struggle theme, layout, animations, expandable panels |
 | `script.js` | Era filtering, scroll reveal, scroll-spy, progress bar |
+| `favicon.svg` | Hub icon: tricolour ring and gold Ashoka Chakra |
+| `favicon.ico`, `favicon-16.png`, `favicon-32.png` | Browser favicon fallbacks |
+| `apple-touch-icon.png` | Home-screen icon for iOS |
 | `shared-nav.css` | Slim top bar styling shared by all sections |
 | `reformers/` | Reformers of India site (own pages, CSS and images) |
 | `chronicles/` | Chronicles of the Raj app (own HTML, CSS, JS) |
