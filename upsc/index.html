@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UPSC Topic Explorer — One Random Topic, Explained Simply</title>
+  <meta name="description" content="Learn a random topic from polity, Indian history, geography, science, technology, economics and more — explained in plain language for complete beginners.">
+  <link rel="stylesheet" href="../shared-nav.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="hub-site">
+  <nav class="hubbar" aria-label="Site sections">
+    <div class="hubbar-inner">
+      <a class="hubbar-brand" href="../index.html"><span class="hub-dot" aria-hidden="true"></span>India History Hub</a>
+      <div class="hubbar-links">
+        <a href="../index.html">Freedom Struggle</a>
+        <a href="../reformers/index.html">Reformers</a>
+        <a href="../chronicles/index.html">Chronicles of the Raj</a>
+        <a href="../dynasties/index.html">Dynasties</a>
+        <a href="../after-1857/index.html">After 1857</a>
+        <a href="index.html" class="active">UPSC Topics</a>
+      </div>
+    </div>
+  </nav>
+<div class="tricolour" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">
+      <svg class="chakra" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+        <circle cx="20" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="1.8"/>
+        <circle cx="20" cy="20" r="10.5" fill="none" stroke="currentColor" stroke-width="1"/>
+        <circle cx="20" cy="20" r="2.4" fill="currentColor"/>
+        <g stroke="currentColor" stroke-width="1">
+          <line x1="20" y1="20" x2="20" y2="2.5"/>
+          <line x1="20" y1="20" x2="20" y2="37.5"/>
+          <line x1="20" y1="20" x2="2.5" y2="20"/>
+          <line x1="20" y1="20" x2="37.5" y2="20"/>
+          <line x1="20" y1="20" x2="7.6" y2="7.6"/>
+          <line x1="20" y1="20" x2="32.4" y2="32.4"/>
+          <line x1="20" y1="20" x2="7.6" y2="32.4"/>
+          <line x1="20" y1="20" x2="32.4" y2="7.6"/>
+          <line x1="20" y1="20" x2="13" y2="3.9"/>
+          <line x1="20" y1="20" x2="27" y2="36.1"/>
+          <line x1="20" y1="20" x2="3.9" y2="27"/>
+          <line x1="20" y1="20" x2="36.1" y2="13"/>
+        </g>
+      </svg>
+      <span>UPSC Topic Explorer<small>One topic at a time, from scratch</small></span>
+    </a>
+    <button class="theme-btn" type="button" aria-pressed="false" aria-label="Switch to dark mode">
+      <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.7 15.2A8.7 8.7 0 0 1 8.8 3.3a8.7 8.7 0 1 0 11.9 11.9Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><g stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="12" y1="2.6" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="21.4"/><line x1="2.6" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="21.4" y2="12"/><line x1="5.4" y1="5.4" x2="7.1" y2="7.1"/><line x1="16.9" y1="16.9" x2="18.6" y2="18.6"/><line x1="5.4" y1="18.6" x2="7.1" y2="16.9"/><line x1="16.9" y1="7.1" x2="18.6" y2="5.4"/></g></svg>
+      <span class="theme-label">Dark mode</span>
+    </button>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <h1>Learn something new,<br><span class="accent">one random topic at a time.</span></h1>
+    <p class="hero-sub">Polity, history, geography, science, technology, economics and more — each topic explained from zero, with five facts worth remembering.</p>
+  </section>
+
+  <section class="controls" aria-label="Topic controls">
+    <div class="filter-row">
+      <div class="chips" id="categoryChips" role="group" aria-label="Filter by category"></div>
+    </div>
+    <div class="search-row">
+      <div class="search-box">
+        <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"/><line x1="15.3" y1="15.3" x2="21" y2="21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <input id="searchInput" type="search" placeholder="Search topics or keywords (press /)" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="searchResults" aria-autocomplete="list">
+        <div class="search-results" id="searchResults" role="listbox" aria-label="Search results" hidden></div>
+      </div>
+      <button class="btn btn-primary" id="surpriseBtn" type="button">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="4" width="16" height="16" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="9" cy="9" r="1.35" fill="currentColor"/><circle cx="15" cy="15" r="1.35" fill="currentColor"/><circle cx="15" cy="9" r="1.35" fill="currentColor"/><circle cx="9" cy="15" r="1.35" fill="currentColor"/></svg>
+        Surprise me
+      </button>
+    </div>
+  </section>
+
+  <section class="progress-row" aria-label="Progress">
+    <div class="progress-copy">
+      <span id="progressText">Explored 0 of 0 topics</span>
+      <button class="link-btn" id="resetBtn" type="button">Reset progress</button>
+    </div>
+    <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progressBar">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+  </section>
+
+  <section id="topicRegion" class="topic-region" aria-live="polite" aria-atomic="true">
+    <noscript>
+      <div class="topic-card">
+        <p>This explorer needs JavaScript to pick random topics. Please enable JavaScript and reload.</p>
+      </div>
+    </noscript>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="footer-note">An educational project. Facts are simplified for beginners and are based on standard references such as NCERT textbooks, Laxmikanth, Spectrum and the linked sources. Always verify details against official sources before relying on them.</p>
+    <p class="footer-meta">Plain HTML, CSS and JavaScript. No tracking. Progress is stored only in your browser.</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/data-part1.js" defer></script>
+<script src="js/data-part2.js" defer></script>
+<script src="js/app.js" defer></script>
+  <script src="../shared-nav.js" defer></script>
+</body>
+</html>
