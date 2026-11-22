@@ -1,6 +1,6 @@
 # India History Hub
 
-A merged site bringing together six learning projects, joined by a
+A merged site bringing together seven learning projects, joined by a
 shared slim top bar on every page:
 
 - **Freedom Struggle** (site root) - single-page site covering India's freedom
@@ -13,7 +13,10 @@ shared slim top bar on every page:
 - **Dynasties & Rulers** (`dynasties/`) - the Mughals, Marathas, the Nawabs of
   Awadh and Bengal, and the Rani of Jhansi, with their rulers and the major
   events of their times
-- **India After 1857** (site root) - full arc from the 1857 revolt to modern India, across ten illustrated pages and a 101-event timeline.
+- **Wars of India** (`wars/`) - forty conflicts from 1526 to 1885, with
+  causes, campaigns, settlements, key battles, the rulers of the time and the
+  British Governor-General or Viceroy for each war
+- **India After 1857** (`after-1857/`) - full arc from the 1857 revolt to modern India, across ten illustrated pages and a 101-event timeline.
 - **UPSC Topic Explorer** (`upsc/`) - 100 beginner-friendly topics across
   polity, history, geography, science, technology, economics, environment,
   culture and international relations, picked at random with five key facts
@@ -27,7 +30,7 @@ this repo's `main` branch on every push.
 Or run it locally: double-click `index.html`, or right-click it and choose
 "Open with" your browser. No server or installation is required.
 
-Note: all six sections work offline for their core content. The Chronicles
+Note: all seven sections work offline for their core content. The Chronicles
 section loads its fonts/icons from a CDN and its portraits from Wikimedia
 Commons, so it needs an internet connection. Source links in UPSC Topic
 Explorer open external pages and also need a connection.
@@ -71,6 +74,19 @@ Explorer open external pages and also need a connection.
 - Tabs are linkable, e.g. `dynasties/index.html#marathas`, and monogram
   avatars keep the whole section working offline
 
+### Wars of India (`wars/`)
+
+- Landing page with search, era and type filters, a chronological strip and
+  forty conflict cards
+- Each dossier covers background, course, outcome and aftermath, plus key
+  battles, belligerents, sources and related conflicts
+- A generated rulers table matches every major power's reigning rulers to the
+  war's dates; a separate panel lists the British Governor-General or Viceroy
+  and explains whether Britain was a belligerent
+- Deep links use `wars/war.html?war=<id>`, e.g.
+  `wars/war.html?war=plassey-1757`; the index can open pre-filtered by era with
+  `wars/index.html#era-<era>`, e.g. `wars/index.html#era-company-expansion`
+
 ### UPSC Topic Explorer (`upsc/`)
 
 - One random topic at a time from ten categories: polity, Indian history,
@@ -102,22 +118,23 @@ material one click away.
 | `reformers/` | Reformers of India site (own pages, CSS and images) |
 | `chronicles/` | Chronicles of the Raj app (own HTML, CSS, JS) |
 | `dynasties/` | Dynasties & Rulers page (own HTML, CSS, JS) |
+| `wars/` | Wars of India archive (own HTML, CSS, ruler and war data, JS) |
 | `upsc/` | UPSC Topic Explorer (own HTML, CSS, data and JS) |
 
 ## Navigation
 
 Every page carries the same fixed top bar:
 
-`India History Hub` | Freedom Struggle | Reformers | Chronicles of the Raj | Dynasties | After 1857 | UPSC Topics
+`India History Hub` | Freedom Struggle | Reformers | Chronicles of the Raj | Dynasties | Wars | After 1857 | UPSC Topics
 
 The bar highlights the section you are currently in and links between the
-six sections with plain relative links - no server needed.
+seven sections with plain relative links - no server needed.
 
 ## Features
 
-- Freedom Struggle, Reformers, Dynasties, India After 1857 and UPSC Topic
-  Explorer work fully offline, no external libraries
-- Responsive: desktop, tablet and mobile layouts in all six sections
+- Freedom Struggle, Reformers, Dynasties, Wars, India After 1857 and UPSC
+  Topic Explorer work fully offline, no external libraries
+- Responsive: desktop, tablet and mobile layouts in all seven sections
 - Interactive timeline filtering with smooth reveal animations
 - Expandable "More details" panels on cards (native `<details>`, no scripts)
 - Reading progress bar and navigation scroll-spy

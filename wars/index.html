@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Wars of India, 1526-1885: forty conflicts from Panipat and Talikota to Plassey, the Anglo-Maratha and Anglo-Sikh Wars, the Revolt of 1857 and the annexation of Burma. Each dossier includes rulers and the British Governor-General or Viceroy at the time.">
+  <title>Wars of India (1526-1885) - India History Hub</title>
+  <link rel="stylesheet" href="../shared-nav.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+</head>
+<body class="hub-site" data-page="wars-home">
+
+  <nav class="hubbar" aria-label="Site sections">
+    <div class="hubbar-inner">
+      <a class="hubbar-brand" href="../index.html"><span class="hub-dot" aria-hidden="true"></span>India History Hub</a>
+      <div class="hubbar-links">
+        <a href="../index.html">Freedom Struggle</a>
+        <a href="../reformers/index.html">Reformers</a>
+        <a href="../chronicles/index.html">Chronicles of the Raj</a>
+        <a href="../dynasties/index.html">Dynasties</a>
+        <a href="index.html" class="active">Wars</a>
+        <a href="../after-1857/index.html">After 1857</a>
+        <a href="../upsc/index.html">UPSC Topics</a>
+      </div>
+    </div>
+  </nav>
+
+  <a class="skip-link" href="#war-index">Skip to the war index</a>
+
+  <main id="main">
+
+    <header class="wars-hero">
+      <div class="hero-pattern" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <span class="kicker">1526 &mdash; 1885 &middot; Swords, Sieges &amp; Sovereignty</span>
+        <h1>Wars of <span class="accent">India</span></h1>
+        <div class="hero-rule" aria-hidden="true"></div>
+        <p class="lead">
+          From Babur's guns at Panipat to the British annexation of Burma &mdash;
+          forty conflicts that redrew the map of the subcontinent. Each dossier
+          sets out the causes, the course, the settlement and the rulers who held
+          power while it was fought.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#war-index">Browse the conflicts</a>
+          <a class="btn btn-ghost" href="#war-timeline">See the timeline</a>
+        </div>
+        <div class="hero-stats" aria-label="Archive at a glance">
+          <div class="hero-stat"><strong>40</strong><span>conflicts</span></div>
+          <div class="hero-stat"><strong>359</strong><span>years covered</span></div>
+          <div class="hero-stat"><strong>5</strong><span>historical eras</span></div>
+        </div>
+      </div>
+    </header>
+
+    <section class="controls-band" aria-label="Search and filter the war index">
+      <div class="container">
+        <div class="controls-panel">
+          <label class="search-field" for="war-search">
+            <span class="search-label">Search the archive</span>
+            <span class="search-input-wrap">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg>
+              <input id="war-search" type="search" placeholder="Try a war, year, region or power..." autocomplete="off">
+            </span>
+          </label>
+          <div class="filter-row">
+            <span class="filter-label">Era</span>
+            <div class="filter-chips" id="era-filters" aria-label="Filter by era"></div>
+          </div>
+          <div class="filter-row">
+            <span class="filter-label">Type</span>
+            <div class="filter-chips" id="type-filters" aria-label="Filter by conflict type"></div>
+          </div>
+          <div class="results-bar">
+            <span id="war-count" aria-live="polite">Loading conflicts...</span>
+            <span class="results-note">Every dossier lists rulers and the British Governor-General or Viceroy.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline-band" aria-labelledby="timeline-heading">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">The long arc</span>
+          <h2 id="timeline-heading">Timeline at a glance</h2>
+          <p>Scroll sideways through the conflicts in chronological order.</p>
+        </div>
+        <div class="timeline-strip" id="war-timeline" aria-label="Chronological timeline of conflicts"></div>
+      </div>
+    </section>
+
+    <section class="war-index" id="war-index" aria-labelledby="index-heading">
+      <div class="container">
+        <div class="section-heading index-heading">
+          <span class="eyebrow">The dossiers</span>
+          <h2 id="index-heading">Choose a conflict</h2>
+          <p>Open any dossier for the narrative, key battles, the rulers of the time and the British administrator in India.</p>
+        </div>
+        <div class="war-grid" id="war-grid" aria-live="polite"></div>
+        <noscript>
+          <div class="empty-state">
+            <h2>JavaScript is required</h2>
+            <p>This archive renders its dossiers in the browser. Please enable JavaScript to browse the conflicts.</p>
+          </div>
+        </noscript>
+      </div>
+    </section>
+
+    <section class="method-band" aria-labelledby="method-heading">
+      <div class="container method-inner">
+        <div>
+          <span class="eyebrow">How to read this archive</span>
+          <h2 id="method-heading">One conflict, many perspectives</h2>
+        </div>
+        <div class="method-copy">
+          <p>
+            The main catalogue runs from 1686 to 1885, with a short prologue on
+            the three founding battles of 1526, 1556 and 1565. It includes wars
+            between Indian powers, wars against European companies and the Crown,
+            and major armed uprisings.
+          </p>
+          <p>
+            Rulers are matched to the years of each conflict, not to a single
+            date. Where a power was divided &mdash; the Maratha Chhatrapati and
+            Peshwa, or Mysore's Wodeyar kings and effective rulers &mdash; both
+            are shown. Britain's administrator is listed for context even when
+            Britain was not a belligerent.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        Part of the <strong>India History Hub</strong>
+        &middot; <a href="../index.html">Freedom Struggle</a>
+        &middot; <a href="../reformers/index.html">Reformers</a>
+        &middot; <a href="../chronicles/index.html">Chronicles of the Raj</a>
+        &middot; <a href="../dynasties/index.html">Dynasties</a>
+        &middot; <a href="../after-1857/index.html">After 1857</a>
+        &middot; <a href="../upsc/index.html">UPSC Topics</a>
+      </p>
+      <p class="fine">A concise educational overview &mdash; dates and reign spans follow the standard historical record.</p>
+    </div>
+  </footer>
+
+  <script src="js/powers-data.js"></script>
+  <script src="js/british-data.js"></script>
+  <script src="js/wars-data-a.js"></script>
+  <script src="js/wars-data-b.js"></script>
+  <script src="js/app.js"></script>
+  <script src="../shared-nav.js" defer></script>
+</body>
+</html>
